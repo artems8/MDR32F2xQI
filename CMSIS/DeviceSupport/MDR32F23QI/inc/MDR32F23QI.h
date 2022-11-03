@@ -3168,7 +3168,7 @@ typedef struct
 
 #define MDR_SSP1                        ((MDR_SSP_TypeDef    *) MDR_SSP1_BASE)
 #define MDR_UART0                      ((MDR_UART_TypeDef   *) MDR_UART0_BASE)
-#define MDR_UART2                      ((MDR_UART_TypeDef   *) MDR_UART1_BASE)
+#define MDR_UART1                      ((MDR_UART_TypeDef   *) MDR_UART1_BASE)
 #define MDR_EEPROM                     ((MDR_EEPROM_TypeDef *) MDR_EEPROM_BASE)
 #define MDR_RST_CLK                    ((MDR_RST_CLK_TypeDef*) MDR_RST_CLK_BASE)
 #define MDR_I2C                        ((MDR_I2C_TypeDef    *) MDR_I2C_BASE)
