@@ -315,7 +315,7 @@ typedef enum
                              RST_CLK_PCLK_ADC     | RST_CLK_PCLK_WWDG   | \
                              RST_CLK_PCLK_IWDG    | RST_CLK_PCLK_POWER  | \
                              RST_CLK_PCLK_BKP     | RST_CLK_PCLK_ADCUI  | \
-                             RST_CLK_PCLK_TIMER1  | RST_CLK_PCLK_TIMER2 | \
+                             RST_CLK_PCLK_TIMER0  | RST_CLK_PCLK_TIMER1 | \
                              RST_CLK_PCLK_PORTA   | RST_CLK_PCLK_PORTB)
 #elif defined (USE_MDR32F23QI)
 #define RST_CLK_PCLK_MASK   (RST_CLK_PCLK_SSP1    | RST_CLK_PCLK_UART0  | \
@@ -324,7 +324,7 @@ typedef enum
                              RST_CLK_PCLK_ADC     | RST_CLK_PCLK_WWDG   | \
                              RST_CLK_PCLK_IWDG    | RST_CLK_PCLK_POWER  | \
                              RST_CLK_PCLK_BKP     | RST_CLK_PCLK_ADCUI  | \
-                             RST_CLK_PCLK_TIMER1  | RST_CLK_PCLK_TIMER2 | \
+                             RST_CLK_PCLK_TIMER0  | RST_CLK_PCLK_TIMER1 | \
                              RST_CLK_PCLK_PORTA   | RST_CLK_PCLK_PORTB)
 #endif
 #define IS_RST_CLK_PCLK(PCLK)   ((PCLK & RST_CLK_PCLK_MASK) == PCLK)

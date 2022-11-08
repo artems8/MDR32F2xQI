@@ -36,58 +36,6 @@
 #define FLAG_MASK                   ((uint8_t)0x1F)
 #define FLAG_SFR_MASK               ((uint8_t)0xE0)
 
-#if defined (MDR_LEGACY_SUPPORT) && (MDR_LEGACY_SUPPORT) == 153
-    #warning "Legacy v1.5.3: Clock frequencies and timeouts will be removed from MDR32F2xQI_rst_clk_rst_clk.c. Use definitions in MDR32F2xQI_rst_clk_config.h"
-
-    #ifndef HSI_Value
-        /* Typical Value of the HSI in Hz */
-        #define HSI_Value                  ((uint32_t)8000000)
-    #endif /* #ifndef HSI_Value */
-
-    #ifndef HSE_Value
-        /* Typical Value of the HSE in Hz */
-        #define HSE_Value                  ((uint32_t)8000000)
-    #endif /* #ifndef HSE_Value */
-
-    #ifndef LSI_Value
-        /* Typical Value of the LSI in Hz */
-        #define LSI_Value                  ((uint32_t)40000)
-    #endif /* #ifndef LSI_Value */
-
-    #ifndef LSE_Value
-        /* Typical Value of the LSE in Hz */
-        #define LSE_Value                  ((uint32_t)32768)
-    #endif /* #ifndef LSE_Value */
-
-    #ifndef HSEonTimeOut
-        /* Time out for HSE start up */
-        #define HSEonTimeOut               ((uint16_t)0x0600)
-    #endif /* #ifndef HSEonTimeOut */
-
-    #ifndef LSEonTimeOut
-        /* Time out for LSE start up */
-        #define LSEonTimeOut               ((uint16_t)0x0600)
-    #endif /* #ifndef LSEonTimeOut */
-
-    #ifndef HSIonTimeOut
-        /* Time out for HSI start up */
-        #define HSIonTimeOut               ((uint16_t)0x0600)
-    #endif /* #ifndef HSIonTimeOut */
-
-    #ifndef LSIonTimeOut
-        /* Time out for LSI start up */
-        #define LSIonTimeOut               ((uint16_t)0x0600)
-    #endif /* #ifndef LSIonTimeOut */
-
-    #ifndef PLLCPUonTimeOut
-        /* Time out for PLLCPU start up */
-        #define PLLCPUonTimeOut            ((uint16_t)0x0600)
-    #endif /* #ifndef PLLCPUonTimeOut */
-
-#endif /* MDR_LEGACY_SUPPORT 153 */
-
-/** @} */ /* End of group RST_CLK_Private_Constants */
-
 
 /** @defgroup RST_CLK_Private_Functions RST_CLK Private Functions
   * @{
