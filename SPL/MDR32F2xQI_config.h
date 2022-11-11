@@ -55,8 +55,8 @@ extern "C" {
    (when RTE_Components.h included) according to the selected
    microcontroller in "Options for Target->Device" window.*/
    
- //#define USE_MDR32F21QI
- #define USE_MDR32F23QI
+ #define USE_MDR32F21QI
+ //#define USE_MDR32F23QI
 
 /* Select the header file for target microcontroller */
 #if defined (USE_MDR32F21QI)
